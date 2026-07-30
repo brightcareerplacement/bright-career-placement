@@ -19,16 +19,16 @@ header{
 }
 
 .logo{
-    width:80px;
-    height:80px;
+    width:100px;
+    height:100px;
     border-radius:50%;
-    display:block;
-    margin:10px auto;
+    margin-bottom:15px;
 }
 
 header h1{
+    background:#0047AB;
     color:wheat;
-    padding:20px;
+    padding:30px 20px;
 }
 
 nav{
@@ -41,7 +41,6 @@ nav a{
     margin:0 15px;
     font-size:18px;
     font-weight:bold;
-    transition:0.3s;
 }
 
 nav a:hover{
@@ -77,7 +76,6 @@ nav a:hover{
 }
 
 
-/* Button */
 button{
     background:#0047AB;
     color:white;
@@ -94,29 +92,26 @@ button:hover{
 }
 
 
-/* Features & Services */
-.features,
-.services,
-.jobs,
-.about,
-.apply,
-.contact{
+/* Services */
+.services{
     padding:60px 20px;
+    background:#f5f8fc;
 }
 
+.services h2{
+    color:#0047AB;
+    font-size:32px;
+    margin-bottom:30px;
+}
 
-.service-box,
-.feature-box,
-.job-box{
+.service-box{
     display:flex;
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
 }
 
-
-.card,
-.job-card{
+.card{
     background:white;
     width:280px;
     padding:25px;
@@ -124,43 +119,23 @@ button:hover{
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-
-.card h3,
-.job-card h3{
+.card h3{
     color:#0047AB;
 }
 
-.card p,
-.job-card p{
+.card p{
     color:#555;
     line-height:1.5;
 }
 
 
-/* Search */
-.search-section{
-    text-align:center;
-    margin:30px 0;
-}
-
-.search-section input{
-    width:80%;
-    max-width:400px;
-    padding:12px;
-    border:2px solid #007bff;
-    border-radius:8px;
-    font-size:16px;
-}
-
-
 /* About */
 .about{
+    padding:60px 20px;
     background:white;
 }
 
-.about h2,
-.contact h2,
-.apply h2{
+.about h2{
     color:#0047AB;
     font-size:32px;
     margin-bottom:20px;
@@ -175,9 +150,15 @@ button:hover{
 }
 
 
-/* Apply Form */
+/* Apply */
 .apply{
     background:#f5f8fc;
+    padding:60px 20px;
+}
+
+.apply h2{
+    color:#0047AB;
+    margin-bottom:25px;
 }
 
 .apply form{
@@ -201,7 +182,14 @@ button:hover{
 
 /* Contact */
 .contact{
+    padding:60px 20px;
     background:white;
+}
+
+.contact h2{
+    color:#0047AB;
+    font-size:32px;
+    margin-bottom:20px;
 }
 
 .contact p{
@@ -218,14 +206,8 @@ footer{
     padding:20px;
 }
 
-
-/* Smooth Scroll */
-html{
-    scroll-behavior:smooth;
-}
-
-section{
-    scroll-margin-top:20px;
+footer p{
+    color:white;
 }
 
 
@@ -241,13 +223,27 @@ section{
         margin:10px;
     }
 
-    .card,
-    .job-card{
+    .service-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
         width:90%;
     }
 
     .home h2{
         font-size:28px;
     }
+}
+section{
+    scroll-margin-top:20px;
+}
 
+html{
+    scroll-behavior:smooth;
+}
+
+nav a{
+    transition:0.3s;
 }

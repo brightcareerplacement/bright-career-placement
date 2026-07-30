@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Career Bridge Placement</title>
+  <title>Bright Career Placement</title>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,15 +12,10 @@
 <body>
 
 <header>
-    <div class="logo">
-        <h2>Career Bridge Placement</h2>
-        <p>Your Gateway to Banking Careers</p>
-    </div>
 
-</header>
-  <img src="logo.png" alt="Career Bridge Placement Logo" class="logo">
+    <img src="logo.png" alt="Bright Career Placement Logo" class="logo"
 
-    <h1>Career Bridge Placement</h1>
+    <h1>Bright Career Placement</h1>
 
     <nav>
         <a href="#home">Home</a>
@@ -28,10 +24,13 @@
         <a href="#contact">Contact</a>
         <a href="#apply">Apply</a>
     </nav>
+
 </header>
 
+
 <section class="home" id="home">
-    <h2>Welcome to Career Bridge Placement</h2>
+
+    <h2>Welcome to Bright Career Placement</h2>
 
     <img src="career.jpg" alt="Career Placement" class="home-img">
 
@@ -41,24 +40,38 @@
     </p>
 
     <button>Get Started</button>
+
 </section>
-    <p>
-        We help candidates find the right job opportunities
-        and build a successful career.
-    </p>
-    <button>Get Started</button>
-</section>
-    
+
+
 <section class="features">
 
-    <h2>Why Choose Career Bridge Placement?</h2>
+    <h2>Why Choose Bright Career Placement?</h2>
 
     <div class="feature-box">
+
         <div class="card">
-            <h3>🏦 Private Bank Jobs</h3>
-            <p>Latest openings in HDFC, ICICI, Axis, Kotak and more.</p>
+            <h3>🎓 Manipal NIIT Program</h3>
+            <p>
+                Training and placement support for freshers.
+            </p>
         </div>
+
+
+        <div class="card">
+            <h3>📄 Resume Support</h3>
+            <p>
+                Professional resume creation and interview guidance.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
 <section class="services" id="services">
+
     <h2>Our Services</h2>
 
     <div class="service-box">
@@ -80,34 +93,72 @@
 
     </div>
 </section>
-        <div class="card">
-            <h3>🎓 Manipal NIIT Program</h3>
-            <p>Training and placement support for freshers.</p>
-        </div>
-
-        <div class="card">
-            <h3>📄 Resume Support</h3>
-            <p>Professional resume creation and interview guidance.</p>
-        </div>
-    </div>
-
-</section>
 <section class="about" id="about">
+
     <h2>About Us</h2>
 
     <p>
-        Career Bridge Placement is a professional job placement
+        Bright Career Placement is a professional job placement
         consultancy that helps candidates find the right career
         opportunities and supports companies in recruitment.
     </p>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Bright Career Placement is a professional job placement
+        consultancy that helps candidates find the right career
+        opportunities and supports companies in recruitment.
+    </p>
+
 </section>
 <section class="contact">
+
     <h2>Contact Us</h2>
 
-    <p>Email: careerbridgeplacement@gmail.com</p>
-    <p>Phone: +91 9876543210</p>
-    <p>Location: Maharashtra, India</p>
+    <p>Email: brighttcareer.placement@gmail.com</p>
+    <p>Phone: +91 7620772400</p>
+    <p>Location: Pisa Devi Chhatrapati Sambhajinagar Maharashtra, India</p>
+
 </section>
+
+
+<script>
+
+function searchJobs() {
+
+    let input = document.getElementById("searchInput").value.toLowerCase();
+
+    let jobs = document.querySelectorAll(".job-card");
+
+    jobs.forEach(function(job) {
+
+        let text = job.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            job.style.display = "block";
+        } else {
+            job.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+<section class="search-section">
+
+    <input type="text" id="searchInput" placeholder="🔍 Search Jobs..." onkeyup="searchJobs()">
+
+</section>
+
+
 <section class="jobs">
 
     <h2>Latest Banking Jobs</h2>
@@ -117,38 +168,41 @@
         <div class="job-card">
             <h3>🏦 HDFC Bank</h3>
             <p>Relationship Officer</p>
-            <button>Apply</button>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdASm98KOFmfla2lcxGC-AhvNlQDDgEaxSV036VYkno-HV7XQ/viewform" target="_blank">
+                <button>Apply</button>
+            </a>
         </div>
+
 
         <div class="job-card">
             <h3>🏦 ICICI Bank</h3>
             <p>Customer Service Executive</p>
-            <button>Apply</button>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdASm98KOFmfla2lcxGC-AhvNlQDDgEaxSV036VYkno-HV7XQ/viewform" target="_blank">
+                <button>Apply</button>
+            </a>
         </div>
+
 
         <div class="job-card">
             <h3>🏦 Axis Bank</h3>
             <p>Assistant Manager</p>
-            <button>Apply</button>
-        </div>
 
-        <div class="job-card">
-            <h3>🏦 Kotak Mahindra Bank</h3>
-            <p>Sales Officer</p>
-            <button>Apply</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdASm98KOFmfla2lcxGC-AhvNlQDDgEaxSV036VYkno-HV7XQ/viewform" target="_blank">
+                <button>Apply</button>
+            </a>
         </div>
 
     </div>
 
 </section>
-<section class="about">
 
-    <h2>About Career Bridge Placement</h2>
 <section class="apply" id="apply">
 
     <h2>Apply Now</h2>
 
-    <form>
+    <form onsubmit="sendWhatsApp(); return false;">
 
         <input type="text" placeholder="Full Name" required>
 
@@ -158,88 +212,34 @@
 
         <input type="text" placeholder="Qualification" required>
 
+        <input type="file" accept=".pdf,.doc,.docx" required>
+
         <button type="submit">Submit Application</button>
 
     </form>
-<form onsubmit="sendWhatsApp(); return false;">
-
-    <input type="text" placeholder="Your Name">
-
-    <input type="email" placeholder="Your Email">
-
-    <input type="text" placeholder="Your Phone">
-
-    <button>Submit</button>
-
-</form>
 <script>
-function sendWhatsApp(){
 
-    var name = document.querySelector('input[placeholder="Your Name"]').value;
-    var email = document.querySelector('input[placeholder="Your Email"]').value;
-    var phone = document.querySelector('input[placeholder="Your Phone"]').value;
+function sendWhatsApp() {
 
-    var message = "New Application%0A%0A" +
-                  "Name: " + name + "%0A" +
-                  "Email: " + email + "%0A" +
-                  "Phone: " + phone;
+    var name = document.querySelector('input[placeholder="Full Name"]').value;
+    var email = document.querySelector('input[placeholder="Email Address"]').value;
+    var phone = document.querySelector('input[placeholder="Mobile Number"]').value;
+    var qualification = document.querySelector('input[placeholder="Qualification"]').value;
 
-    window.open("https://wa.me/917620772400?text=" + message);
+    var message =
+        "📋 New Job Application%0A%0A" +
+        "👤 Full Name: " + name + "%0A" +
+        "📧 Email: " + email + "%0A" +
+        "📱 Mobile: " + phone + "%0A" +
+        "🎓 Qualification: " + qualification + "%0A%0A" +
+        "📎 Please upload your Resume using the Google Drive/Form link.";
+
+    window.open("https://wa.me/917620772400?text=" + message, "_blank");
+
 }
+
 </script>
-</section>
-    <p>
-        Career Bridge Placement is a professional banking placement consultancy
-        helping freshers and experienced candidates get jobs in leading private
-        banks such as HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra Bank,
-        IndusInd Bank, and more.
-    </p>
-
-    <p>
-        We also provide guidance for the Manipal NIIT Banking Program,
-        resume building, interview preparation, and career support.
-    </p>
-
-</section>
-<section class="contact" id="contact">
-
-    <h2>Contact Us</h2>
-
-    <p>📧 Email: brighttcareer.placement@gmail.com</p>
-
-    <p>📞 Phone: +91 7620772400</p>
-
-    <p>📞 Phone: +91 7387852322</p>
-
-    <p>📍 Location: Pisa Devi Chhatrapati Sambhajinagar Maharashtra, India</p>
-
-</section>
 
 
-<footer>
-
-    <h3>Career Bridge Placement</h3>
-
-    <p>Your Gateway to Banking Careers</p>
-
-    <p>© 2026 Career Bridge Placement. All Rights Reserved.</p>
-
-</footer>
-
-<script>
-function sendWhatsApp(){
-
-    var name = document.querySelector('input[placeholder="Your Name"]').value;
-    var email = document.querySelector('input[placeholder="Your Email"]').value;
-    var phone = document.querySelector('input[placeholder="Your Phone"]').value;
-
-    var message = "New Application%0A%0A" +
-                  "Name: " + name + "%0A" +
-                  "Email: " + email + "%0A" +
-                  "Phone: " + phone;
-
-    window.open("https://wa.me/917620772400?text=" + message);
-}
-</script>
 </body>
 </html>
