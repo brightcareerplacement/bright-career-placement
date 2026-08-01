@@ -87,7 +87,7 @@ nav a:hover{
     height:125vh;
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("../images/banner.jpg");
+    url("banner.jpg");
     background-size:cover;
     background-position:center;
     display:flex;
@@ -96,6 +96,7 @@ nav a:hover{
     text-align:center;
     color:#fff;
     padding:20px;
+}
 }
 
 .hero-content h1{
